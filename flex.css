@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Inter';
+    display:flex;
+    min-height:100vw;
+    flex-direction:column;
+}
+.container-heade{
+    display:flex;
+    flex-direction:row;
+    margin: 50px 0px 0px 50px;
+}
+#header-logo > .material-symbols-outlined{
+    display:none;
+}
+
+#header-logo{
+    display:flex;
+    flex-grow:1;
+}
+#header-logo > img{
+    margin-right:5px;
+}
+.title{
+    color:#C92071;
+    padding-top:5px;
+}
+.header-search{
+    display:flex;
+    flex-grow:2;
+    position:relative;
+    width:300px;
+    height:40px
+}
+        input{
+            width:500px;
+            height:40px;
+            border: none;
+            padding:17px 0px 16px 25px;
+            border-radius:5px;
+        }
+        span{
+             position:absolute;
+            right:80px;
+            top:50%;
+            transform:translate(0,-50%);
+            }
+.header-acesso{
+    display:flex;
+   flex-grow:1;
+}
+.link-cadastro{
+    color:#474747;
+    margin:10px 30px 0px 0px;;
+}
+.link-entrar{
+    text-decoration:none;
+    color:#F5F5F5;
+    background-color:#C92071;
+    border-radius:8px;
+    text-align:center;
+    padding:10px 20px;
+    height:40px;
+}
+.header-carrinho{
+    display:flex;
+    position:relative;
+}
+.notification .badge{
+    position:absolute;
+    color:#ffffff;
+    background-color:#C92071;
+    font-weight:700;
+    top:5px;
+    right:60px;
+    padding:5px 10px;
+    border-radius:50%;
+    
+}
+.container-nav{
+   margin: 50px;
+}
+.container-nav a{
+    padding-right:10px;
+    text-decoration:none;
+    color:#474747;
+}
+.container-nav a:hover{
+    color:#C92071;
+    text-decoration: underline 3px #C92071;
+    padding:5px;
+}
+#main{
+    background-color:#F5F5F5;
+    display:flex;
+    flex-direction:row;
+    width:1400px;
+    height:735px;
+}
+article{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:50px;
+}
+article > h3{
+    font-weight:700;
+    line-height:26px;
+    letter-spacing: 0,81px;
+    padding-bottom:50px;
+}
+article > h1{
+    font-weight: 800;
+    font-size: 69.12px;
+    line-height: 71px;
+    letter-spacing: 1.08px;
+    width:500px;
+    padding-bottom:20px;
+}
+article > p{
+    margin-top:20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    color: #474747;
+    width:300px;
+}
+article > a{
+    margin-top:20px;
+    text-decoration:none;
+    background-color:#C92071;
+    color:white;
+    text-align:center;
+    height: 50px;
+    width: 240px;
+    border-radius: 8px;
+    padding-top:15px;
+}
+article > a:hover{
+    margin-top:20px;
+    text-decoration:none;
+    background-color:white;
+    color:#C92071;
+    text-align:center;
+    height: 50px;
+    width: 240px;
+    border-radius: 8px;
+    padding-top:10px;
+    border:4px solid #C92071;
+}
+nav > .nike-image-nav{
+    transform: rotate(-5.34deg);
+    width:750px;
+} 
+nav > .ornamento-image{
+    display:flex;
+    align-self:flex-start;
+}
+nav{
+    display:flex;
+    align-items: center;
+}
+label {
+    display:flex;
+    justify-content:center;
+}
+input {
+    width:20px;
+    height:20px;
+    accent-color:#C92071;
+    margin-right:5px;
+}
+footer{
+    color:#FFF;
+    background-color:#1F1F1F;
+    width:1350px;
+    height:450px;
+}
+.footer-all{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:300px;
+}
+.footer-detalhes{
+    width:300px;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.footer-titulo-college{
+    display:flex;
+}
+.footer-titulo-college > h2{
+    padding-top:5px;
+    padding-left:5px;
+}
+.footer-icons-redsocial{
+    display:flex;
+    width:100px;
+    justify-content:space-between;
+}
+.footer-informacoes{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-self:flex-end;
+    height:250px;
+    width:150px;
+}
+.footer-categorias{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-self:center;
+    width:100px;
+    height:200px
+
+}
+.footer-contatos{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-self:center;
+    width:200px;
+    height:150px;
+    margin-bottom:45px;
+}
+.footer-alinhamento{
+    display:flex;
+    justify-content:space-around;
+    width:900px;
+    height:300px;
+}
+.style-borda-solid{
+    margin-top:100px;
+    border-bottom: 1px solid rgba(173, 171, 171, 0.1);
+}
+.copywriter{
+    display:flex;
+    justify-content:center;
+    margin-top:15px;
+}
+@media (min-width: 320px) and (max-width:800px){
+    .header-search{
+        display:none;
+    } 
+    .header-acesso{
+        display:none;
+    }
+    #header-logo{
+        min-width:300px;
+    }
+    .container-heade{
+        min-width:320px;
+    }
+    .container-nav{
+        display:none;
+    }
+    #main{
+        min-width:350px;
+        display:flex;
+        flex-direction:column;
+    }
+    #main > nav{
+        order:1;
+    }
+    nav > .nike-image-nav{
+        width:30%;
+    }
+    #main > article{
+        order:2;
+    }
+    footer{
+        height:600px;     
+}
+    .footer-all{
+        display:flex;
+        flex-direction:column;
+        width:60%;
+        justify-content:flex-start;
+        height:400px;
+        margin-top:20px;
+    }
+    .footer-detalhes p{
+        line-height: 1.6;
+    }
+    .footer-alinhamento > .footer-informacoes, .footer-categorias, .footer-contatos{
+        display:flex;
+        flex-direction:column;
+    }
+    .copywriter{
+        width:770px;
+    }
+}
